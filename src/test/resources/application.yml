@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: test
+  datasource:
+    url: jdbc:h2:mem:test
+    username: root
+    password: pass1
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      database-platform: org.hibernate.dialect.H2Dialect
+      show-sql: true
